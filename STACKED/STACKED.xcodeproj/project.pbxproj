@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001000001 /* STACKEDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000001 /* STACKEDApp.swift */; };
+		A1000001000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000002 /* RootView.swift */; };
+		A1000001000003 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000003 /* AppConfig.swift */; };
+		A1000001000004 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000004 /* Theme.swift */; };
+		A1000001000005 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000005 /* UserProfile.swift */; };
+		A1000001000006 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000006 /* Challenge.swift */; };
+		A1000001000007 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000007 /* Achievement.swift */; };
+		A1000001000008 /* SimulationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000008 /* SimulationResult.swift */; };
+		A1000001000009 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000009 /* ChatMessage.swift */; };
+		A1000001000010 /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000010 /* LeaderboardEntry.swift */; };
+		A1000001000011 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000011 /* DemoData.swift */; };
+		A1000001000012 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000012 /* MockAuthService.swift */; };
+		A1000001000013 /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000013 /* MockAIService.swift */; };
+		A1000001000014 /* MockChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000014 /* MockChallengeService.swift */; };
+		A1000001000015 /* MockSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000015 /* MockSubscriptionService.swift */; };
+		A1000001000016 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000016 /* OnboardingFlowView.swift */; };
+		A1000001000017 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000017 /* AuthView.swift */; };
+		A1000001000018 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000018 /* MainTabView.swift */; };
+		A1000001000019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000019 /* HomeView.swift */; };
+		A1000001000020 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000020 /* HomeViewModel.swift */; };
+		A1000001000021 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000021 /* ChallengesView.swift */; };
+		A1000001000022 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000022 /* ChallengeDetailView.swift */; };
+		A1000001000023 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000023 /* ChallengeViewModel.swift */; };
+		A1000001000024 /* SimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000024 /* SimulatorView.swift */; };
+		A1000001000025 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000025 /* SimulatorViewModel.swift */; };
+		A1000001000026 /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000026 /* CoachView.swift */; };
+		A1000001000027 /* CoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000027 /* CoachViewModel.swift */; };
+		A1000001000028 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000028 /* AchievementsView.swift */; };
+		A1000001000029 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000029 /* LeaderboardView.swift */; };
+		A1000001000030 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000030 /* ProfileView.swift */; };
+		A1000001000031 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000031 /* PaywallView.swift */; };
+		A1000001000032 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000032 /* SettingsView.swift */; };
+		A1000001000033 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000033 /* XPProgressBar.swift */; };
+		A1000001000034 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000034 /* StatCard.swift */; };
+		A1000001000035 /* LevelBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000035 /* LevelBadge.swift */; };
+		A1000001000036 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000036 /* GradientButton.swift */; };
+		A1000001000037 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000037 /* HapticManager.swift */; };
+		A1000001000038 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000038 /* Extensions.swift */; };
+		A1000001000039 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000039 /* Charts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		/* Test target build files */
+		A1000002000001 /* STACKEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002000001 /* STACKEDTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2000001000001 /* STACKEDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDApp.swift; sourceTree = "<group>"; };
+		A2000001000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A2000001000003 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A2000001000004 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A2000001000005 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A2000001000006 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		A2000001000007 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		A2000001000008 /* SimulationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResult.swift; sourceTree = "<group>"; };
+		A2000001000009 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		A2000001000010 /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
+		A2000001000011 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		A2000001000012 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		A2000001000013 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAIService.swift; sourceTree = "<group>"; };
+		A2000001000014 /* MockChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallengeService.swift; sourceTree = "<group>"; };
+		A2000001000015 /* MockSubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSubscriptionService.swift; sourceTree = "<group>"; };
+		A2000001000016 /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		A2000001000017 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A2000001000018 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A2000001000019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A2000001000020 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A2000001000021 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
+		A2000001000022 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
+		A2000001000023 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
+		A2000001000024 /* SimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorView.swift; sourceTree = "<group>"; };
+		A2000001000025 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
+		A2000001000026 /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
+		A2000001000027 /* CoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewModel.swift; sourceTree = "<group>"; };
+		A2000001000028 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		A2000001000029 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		A2000001000030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A2000001000031 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		A2000001000032 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A2000001000033 /* XPProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPProgressBar.swift; sourceTree = "<group>"; };
+		A2000001000034 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		A2000001000035 /* LevelBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBadge.swift; sourceTree = "<group>"; };
+		A2000001000036 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		A2000001000037 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A2000001000038 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A2000001000039 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		/* Product references */
+		A2000001000099 /* STACKED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STACKED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000001000100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		/* Test target */
+		A2000002000001 /* STACKEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDTests.swift; sourceTree = "<group>"; };
+		A2000002000099 /* STACKEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STACKEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3000001000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000039 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3000002000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		/* Root group */
+		A4000000000000 = {
+			isa = PBXGroup;
+			children = (
+				A4000001000000 /* STACKED */,
+				A4000002000000 /* STACKEDTests */,
+				A4000003000000 /* Frameworks */,
+				A4000004000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4000004000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000099 /* STACKED.app */,
+				A2000002000099 /* STACKEDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000003000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000039 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		/* Main STACKED group */
+		A4000001000000 /* STACKED */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000100 /* Info.plist */,
+				A4000001000001 /* App */,
+				A4000001000002 /* Core */,
+				A4000001000003 /* Models */,
+				A4000001000004 /* Demo */,
+				A4000001000005 /* Features */,
+				A4000001000006 /* Components */,
+				A4000001000007 /* Utilities */,
+			);
+			path = STACKED;
+			sourceTree = "<group>";
+		};
+		A4000001000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000001 /* STACKEDApp.swift */,
+				A2000001000002 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A4000001000002 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A4000001000002A /* Config */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A4000001000002A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000003 /* AppConfig.swift */,
+				A2000001000004 /* Theme.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A4000001000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000005 /* UserProfile.swift */,
+				A2000001000006 /* Challenge.swift */,
+				A2000001000007 /* Achievement.swift */,
+				A2000001000008 /* SimulationResult.swift */,
+				A2000001000009 /* ChatMessage.swift */,
+				A2000001000010 /* LeaderboardEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4000001000004 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000011 /* DemoData.swift */,
+				A2000001000012 /* MockAuthService.swift */,
+				A2000001000013 /* MockAIService.swift */,
+				A2000001000014 /* MockChallengeService.swift */,
+				A2000001000015 /* MockSubscriptionService.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A4000001000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A4000001000005A /* Onboarding */,
+				A4000001000005B /* Auth */,
+				A4000001000005C /* Home */,
+				A4000001000005D /* Challenges */,
+				A4000001000005E /* Simulator */,
+				A4000001000005F /* Coach */,
+				A4000001000005G /* Achievements */,
+				A4000001000005H /* Social */,
+				A4000001000005I /* Profile */,
+				A4000001000005J /* Paywall */,
+				A4000001000005K /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A4000001000005A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000016 /* OnboardingFlowView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A4000001000005B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000017 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A4000001000005C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000018 /* MainTabView.swift */,
+				A2000001000019 /* HomeView.swift */,
+				A2000001000020 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A4000001000005D /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000021 /* ChallengesView.swift */,
+				A2000001000022 /* ChallengeDetailView.swift */,
+				A2000001000023 /* ChallengeViewModel.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		A4000001000005E /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000024 /* SimulatorView.swift */,
+				A2000001000025 /* SimulatorViewModel.swift */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		A4000001000005F /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000026 /* CoachView.swift */,
+				A2000001000027 /* CoachViewModel.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		A4000001000005G /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000028 /* AchievementsView.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		A4000001000005H /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000029 /* LeaderboardView.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		A4000001000005I /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000030 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A4000001000005J /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000031 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		A4000001000005K /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000032 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A4000001000006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000033 /* XPProgressBar.swift */,
+				A2000001000034 /* StatCard.swift */,
+				A2000001000035 /* LevelBadge.swift */,
+				A2000001000036 /* GradientButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A4000001000007 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A2000001000037 /* HapticManager.swift */,
+				A2000001000038 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		/* Test group */
+		A4000002000000 /* STACKEDTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000002000001 /* STACKEDTests.swift */,
+			);
+			path = STACKEDTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5000001000000 /* STACKED */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6000001000000 /* Build configuration list for PBXNativeTarget "STACKED" */;
+			buildPhases = (
+				A7000001000001 /* Sources */,
+				A3000001000001 /* Frameworks */,
+				A7000001000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STACKED;
+			productName = STACKED;
+			productReference = A2000001000099 /* STACKED.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5000002000000 /* STACKEDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6000002000000 /* Build configuration list for PBXNativeTarget "STACKEDTests" */;
+			buildPhases = (
+				A7000002000001 /* Sources */,
+				A3000002000001 /* Frameworks */,
+				A7000002000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8000001000001 /* PBXTargetDependency */,
+			);
+			name = STACKEDTests;
+			productName = STACKEDTests;
+			productReference = A2000002000099 /* STACKEDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A5000001000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A5000002000000 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A5000001000000;
+					};
+				};
+			};
+			buildConfigurationList = A6000000000000 /* Build configuration list for PBXProject "STACKED" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4000000000000;
+			productRefGroup = A4000004000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5000001000000 /* STACKED */,
+				A5000002000000 /* STACKEDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7000001000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7000002000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7000001000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001000001 /* STACKEDApp.swift in Sources */,
+				A1000001000002 /* RootView.swift in Sources */,
+				A1000001000003 /* AppConfig.swift in Sources */,
+				A1000001000004 /* Theme.swift in Sources */,
+				A1000001000005 /* UserProfile.swift in Sources */,
+				A1000001000006 /* Challenge.swift in Sources */,
+				A1000001000007 /* Achievement.swift in Sources */,
+				A1000001000008 /* SimulationResult.swift in Sources */,
+				A1000001000009 /* ChatMessage.swift in Sources */,
+				A1000001000010 /* LeaderboardEntry.swift in Sources */,
+				A1000001000011 /* DemoData.swift in Sources */,
+				A1000001000012 /* MockAuthService.swift in Sources */,
+				A1000001000013 /* MockAIService.swift in Sources */,
+				A1000001000014 /* MockChallengeService.swift in Sources */,
+				A1000001000015 /* MockSubscriptionService.swift in Sources */,
+				A1000001000016 /* OnboardingFlowView.swift in Sources */,
+				A1000001000017 /* AuthView.swift in Sources */,
+				A1000001000018 /* MainTabView.swift in Sources */,
+				A1000001000019 /* HomeView.swift in Sources */,
+				A1000001000020 /* HomeViewModel.swift in Sources */,
+				A1000001000021 /* ChallengesView.swift in Sources */,
+				A1000001000022 /* ChallengeDetailView.swift in Sources */,
+				A1000001000023 /* ChallengeViewModel.swift in Sources */,
+				A1000001000024 /* SimulatorView.swift in Sources */,
+				A1000001000025 /* SimulatorViewModel.swift in Sources */,
+				A1000001000026 /* CoachView.swift in Sources */,
+				A1000001000027 /* CoachViewModel.swift in Sources */,
+				A1000001000028 /* AchievementsView.swift in Sources */,
+				A1000001000029 /* LeaderboardView.swift in Sources */,
+				A1000001000030 /* ProfileView.swift in Sources */,
+				A1000001000031 /* PaywallView.swift in Sources */,
+				A1000001000032 /* SettingsView.swift in Sources */,
+				A1000001000033 /* XPProgressBar.swift in Sources */,
+				A1000001000034 /* StatCard.swift in Sources */,
+				A1000001000035 /* LevelBadge.swift in Sources */,
+				A1000001000036 /* GradientButton.swift in Sources */,
+				A1000001000037 /* HapticManager.swift in Sources */,
+				A1000001000038 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7000002000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000002000001 /* STACKEDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8000001000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5000001000000 /* STACKED */;
+			targetProxy = A8000001000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A8000001000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5000001000000;
+			remoteInfo = STACKED;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		/* Project-level Debug */
+		AB000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		/* Project-level Release */
+		AB000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		/* Main target Debug */
+		AB000001000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = STACKED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		/* Main target Release */
+		AB000001000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = STACKED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		/* Test target Debug */
+		AB000002000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STACKED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STACKED";
+			};
+			name = Debug;
+		};
+		/* Test target Release */
+		AB000002000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STACKED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STACKED";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6000000000000 /* Build configuration list for PBXProject "STACKED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB000000000001 /* Debug */,
+				AB000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6000001000000 /* Build configuration list for PBXNativeTarget "STACKED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB000001000001 /* Debug */,
+				AB000001000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6000002000000 /* Build configuration list for PBXNativeTarget "STACKEDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB000002000001 /* Debug */,
+				AB000002000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A9000000000000 /* Project object */;
+}
