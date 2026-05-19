@@ -7,107 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001000001 /* STACKEDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000001 /* STACKEDApp.swift */; };
-		A1000001000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000002 /* RootView.swift */; };
-		A1000001000003 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000003 /* AppConfig.swift */; };
-		A1000001000004 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000004 /* Theme.swift */; };
-		A1000001000005 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000005 /* UserProfile.swift */; };
-		A1000001000006 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000006 /* Challenge.swift */; };
-		A1000001000007 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000007 /* Achievement.swift */; };
-		A1000001000008 /* SimulationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000008 /* SimulationResult.swift */; };
-		A1000001000009 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000009 /* ChatMessage.swift */; };
-		A1000001000010 /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000010 /* LeaderboardEntry.swift */; };
-		A1000001000011 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000011 /* DemoData.swift */; };
-		A1000001000012 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000012 /* MockAuthService.swift */; };
-		A1000001000013 /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000013 /* MockAIService.swift */; };
-		A1000001000014 /* MockChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000014 /* MockChallengeService.swift */; };
-		A1000001000015 /* MockSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000015 /* MockSubscriptionService.swift */; };
-		A1000001000016 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000016 /* OnboardingFlowView.swift */; };
-		A1000001000017 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000017 /* AuthView.swift */; };
-		A1000001000018 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000018 /* MainTabView.swift */; };
-		A1000001000019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000019 /* HomeView.swift */; };
-		A1000001000020 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000020 /* HomeViewModel.swift */; };
-		A1000001000021 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000021 /* ChallengesView.swift */; };
-		A1000001000022 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000022 /* ChallengeDetailView.swift */; };
-		A1000001000023 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000023 /* ChallengeViewModel.swift */; };
-		A1000001000024 /* SimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000024 /* SimulatorView.swift */; };
-		A1000001000025 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000025 /* SimulatorViewModel.swift */; };
-		A1000001000026 /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000026 /* CoachView.swift */; };
-		A1000001000027 /* CoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000027 /* CoachViewModel.swift */; };
-		A1000001000028 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000028 /* AchievementsView.swift */; };
-		A1000001000029 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000029 /* LeaderboardView.swift */; };
-		A1000001000030 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000030 /* ProfileView.swift */; };
-		A1000001000031 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000031 /* PaywallView.swift */; };
-		A1000001000032 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000032 /* SettingsView.swift */; };
-		A1000001000033 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000033 /* XPProgressBar.swift */; };
-		A1000001000034 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000034 /* StatCard.swift */; };
-		A1000001000035 /* LevelBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000035 /* LevelBadge.swift */; };
-		A1000001000036 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000036 /* GradientButton.swift */; };
-		A1000001000037 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000037 /* HapticManager.swift */; };
-		A1000001000038 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000038 /* Extensions.swift */; };
-		A1000001000039 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000001000039 /* Charts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		/* Test target build files */
-		A1000002000001 /* STACKEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002000001 /* STACKEDTests.swift */; };
+		A1B2C3D4E5F60001 /* STACKEDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60101 /* STACKEDApp.swift */; };
+		A1B2C3D4E5F60002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60102 /* RootView.swift */; };
+		A1B2C3D4E5F60003 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60103 /* AppConfig.swift */; };
+		A1B2C3D4E5F60004 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60104 /* Theme.swift */; };
+		A1B2C3D4E5F60005 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60105 /* UserProfile.swift */; };
+		A1B2C3D4E5F60006 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60106 /* Challenge.swift */; };
+		A1B2C3D4E5F60007 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60107 /* Achievement.swift */; };
+		A1B2C3D4E5F60008 /* SimulationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60108 /* SimulationResult.swift */; };
+		A1B2C3D4E5F60009 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60109 /* ChatMessage.swift */; };
+		A1B2C3D4E5F6000A /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010A /* LeaderboardEntry.swift */; };
+		A1B2C3D4E5F6000B /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010B /* DemoData.swift */; };
+		A1B2C3D4E5F6000C /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010C /* MockAuthService.swift */; };
+		A1B2C3D4E5F6000D /* MockAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010D /* MockAIService.swift */; };
+		A1B2C3D4E5F6000E /* MockChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010E /* MockChallengeService.swift */; };
+		A1B2C3D4E5F6000F /* MockSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6010F /* MockSubscriptionService.swift */; };
+		A1B2C3D4E5F60010 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60110 /* OnboardingFlowView.swift */; };
+		A1B2C3D4E5F60011 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60111 /* AuthView.swift */; };
+		A1B2C3D4E5F60012 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60112 /* MainTabView.swift */; };
+		A1B2C3D4E5F60013 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60113 /* HomeView.swift */; };
+		A1B2C3D4E5F60014 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60114 /* HomeViewModel.swift */; };
+		A1B2C3D4E5F60015 /* ChallengesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60115 /* ChallengesView.swift */; };
+		A1B2C3D4E5F60016 /* ChallengeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60116 /* ChallengeDetailView.swift */; };
+		A1B2C3D4E5F60017 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60117 /* ChallengeViewModel.swift */; };
+		A1B2C3D4E5F60018 /* SimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60118 /* SimulatorView.swift */; };
+		A1B2C3D4E5F60019 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60119 /* SimulatorViewModel.swift */; };
+		A1B2C3D4E5F6001A /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011A /* CoachView.swift */; };
+		A1B2C3D4E5F6001B /* CoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011B /* CoachViewModel.swift */; };
+		A1B2C3D4E5F6001C /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011C /* AchievementsView.swift */; };
+		A1B2C3D4E5F6001D /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011D /* LeaderboardView.swift */; };
+		A1B2C3D4E5F6001E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011E /* ProfileView.swift */; };
+		A1B2C3D4E5F6001F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6011F /* PaywallView.swift */; };
+		A1B2C3D4E5F60020 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60120 /* SettingsView.swift */; };
+		A1B2C3D4E5F60021 /* XPProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60121 /* XPProgressBar.swift */; };
+		A1B2C3D4E5F60022 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60122 /* StatCard.swift */; };
+		A1B2C3D4E5F60023 /* LevelBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60123 /* LevelBadge.swift */; };
+		A1B2C3D4E5F60024 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60124 /* GradientButton.swift */; };
+		A1B2C3D4E5F60025 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60125 /* HapticManager.swift */; };
+		A1B2C3D4E5F60026 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60126 /* Extensions.swift */; };
+		A1B2C3D4E5F60030 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60130 /* Charts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A1B2C3D4E5F60050 /* STACKEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60150 /* STACKEDTests.swift */; };
+		A1B2C3D4E5F60051 /* STACKEDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60151 /* STACKEDUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A1B2C3D4E5F60060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B2C3D4E5F60200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D4E5F60210;
+			remoteInfo = STACKED;
+		};
+		A1B2C3D4E5F60061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B2C3D4E5F60200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D4E5F60210;
+			remoteInfo = STACKED;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A2000001000001 /* STACKEDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDApp.swift; sourceTree = "<group>"; };
-		A2000001000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		A2000001000003 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		A2000001000004 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		A2000001000005 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		A2000001000006 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		A2000001000007 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		A2000001000008 /* SimulationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResult.swift; sourceTree = "<group>"; };
-		A2000001000009 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
-		A2000001000010 /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
-		A2000001000011 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
-		A2000001000012 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
-		A2000001000013 /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAIService.swift; sourceTree = "<group>"; };
-		A2000001000014 /* MockChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallengeService.swift; sourceTree = "<group>"; };
-		A2000001000015 /* MockSubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSubscriptionService.swift; sourceTree = "<group>"; };
-		A2000001000016 /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
-		A2000001000017 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		A2000001000018 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		A2000001000019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		A2000001000020 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		A2000001000021 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
-		A2000001000022 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
-		A2000001000023 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
-		A2000001000024 /* SimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorView.swift; sourceTree = "<group>"; };
-		A2000001000025 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
-		A2000001000026 /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
-		A2000001000027 /* CoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewModel.swift; sourceTree = "<group>"; };
-		A2000001000028 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
-		A2000001000029 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
-		A2000001000030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		A2000001000031 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
-		A2000001000032 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		A2000001000033 /* XPProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPProgressBar.swift; sourceTree = "<group>"; };
-		A2000001000034 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
-		A2000001000035 /* LevelBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBadge.swift; sourceTree = "<group>"; };
-		A2000001000036 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
-		A2000001000037 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
-		A2000001000038 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		A2000001000039 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
-		/* Product references */
-		A2000001000099 /* STACKED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STACKED.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2000001000100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		/* Test target */
-		A2000002000001 /* STACKEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDTests.swift; sourceTree = "<group>"; };
-		A2000002000099 /* STACKEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STACKEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60101 /* STACKEDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDApp.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60102 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60103 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60104 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60105 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60106 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60107 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60108 /* SimulationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationResult.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60109 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010A /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010B /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010C /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010D /* MockAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAIService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010E /* MockChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallengeService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6010F /* MockSubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSubscriptionService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60110 /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60111 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60112 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60113 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60114 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60115 /* ChallengesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60116 /* ChallengeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60117 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60118 /* SimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60119 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011A /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011B /* CoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewModel.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011C /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011D /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6011F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60120 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60121 /* XPProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPProgressBar.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60122 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60123 /* LevelBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBadge.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60124 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60125 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60126 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60130 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		A1B2C3D4E5F60140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2C3D4E5F60141 /* STACKED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STACKED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60142 /* STACKEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STACKEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60143 /* STACKEDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STACKEDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60150 /* STACKEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDTests.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60151 /* STACKEDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STACKEDUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A3000001000001 /* Frameworks */ = {
+		A1B2C3D4E5F60300 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001000039 /* Charts.framework in Frameworks */,
+				A1B2C3D4E5F60030 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3000002000001 /* Frameworks */ = {
+		A1B2C3D4E5F60301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F60302 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,252 +141,259 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		/* Root group */
-		A4000000000000 = {
+		A1B2C3D4E5F60400 /* <root> */ = {
 			isa = PBXGroup;
 			children = (
-				A4000001000000 /* STACKED */,
-				A4000002000000 /* STACKEDTests */,
-				A4000003000000 /* Frameworks */,
-				A4000004000000 /* Products */,
+				A1B2C3D4E5F60401 /* STACKED */,
+				A1B2C3D4E5F60470 /* STACKEDTests */,
+				A1B2C3D4E5F60471 /* STACKEDUITests */,
+				A1B2C3D4E5F60480 /* Frameworks */,
+				A1B2C3D4E5F60490 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A4000004000000 /* Products */ = {
+		A1B2C3D4E5F60490 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000099 /* STACKED.app */,
-				A2000002000099 /* STACKEDTests.xctest */,
+				A1B2C3D4E5F60141 /* STACKED.app */,
+				A1B2C3D4E5F60142 /* STACKEDTests.xctest */,
+				A1B2C3D4E5F60143 /* STACKEDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4000003000000 /* Frameworks */ = {
+		A1B2C3D4E5F60480 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000039 /* Charts.framework */,
+				A1B2C3D4E5F60130 /* Charts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		/* Main STACKED group */
-		A4000001000000 /* STACKED */ = {
+		A1B2C3D4E5F60401 /* STACKED */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000100 /* Info.plist */,
-				A4000001000001 /* App */,
-				A4000001000002 /* Core */,
-				A4000001000003 /* Models */,
-				A4000001000004 /* Demo */,
-				A4000001000005 /* Features */,
-				A4000001000006 /* Components */,
-				A4000001000007 /* Utilities */,
+				A1B2C3D4E5F60140 /* Info.plist */,
+				A1B2C3D4E5F60410 /* App */,
+				A1B2C3D4E5F60411 /* Core */,
+				A1B2C3D4E5F60413 /* Models */,
+				A1B2C3D4E5F60415 /* Demo */,
+				A1B2C3D4E5F60417 /* Features */,
+				A1B2C3D4E5F60430 /* Components */,
+				A1B2C3D4E5F60431 /* Utilities */,
 			);
 			path = STACKED;
 			sourceTree = "<group>";
 		};
-		A4000001000001 /* App */ = {
+		A1B2C3D4E5F60410 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000001 /* STACKEDApp.swift */,
-				A2000001000002 /* RootView.swift */,
+				A1B2C3D4E5F60101 /* STACKEDApp.swift */,
+				A1B2C3D4E5F60102 /* RootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		A4000001000002 /* Core */ = {
+		A1B2C3D4E5F60411 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A4000001000002A /* Config */,
+				A1B2C3D4E5F60412 /* Config */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		A4000001000002A /* Config */ = {
+		A1B2C3D4E5F60412 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000003 /* AppConfig.swift */,
-				A2000001000004 /* Theme.swift */,
+				A1B2C3D4E5F60103 /* AppConfig.swift */,
+				A1B2C3D4E5F60104 /* Theme.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		A4000001000003 /* Models */ = {
+		A1B2C3D4E5F60413 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000005 /* UserProfile.swift */,
-				A2000001000006 /* Challenge.swift */,
-				A2000001000007 /* Achievement.swift */,
-				A2000001000008 /* SimulationResult.swift */,
-				A2000001000009 /* ChatMessage.swift */,
-				A2000001000010 /* LeaderboardEntry.swift */,
+				A1B2C3D4E5F60105 /* UserProfile.swift */,
+				A1B2C3D4E5F60106 /* Challenge.swift */,
+				A1B2C3D4E5F60107 /* Achievement.swift */,
+				A1B2C3D4E5F60108 /* SimulationResult.swift */,
+				A1B2C3D4E5F60109 /* ChatMessage.swift */,
+				A1B2C3D4E5F6010A /* LeaderboardEntry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A4000001000004 /* Demo */ = {
+		A1B2C3D4E5F60415 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000011 /* DemoData.swift */,
-				A2000001000012 /* MockAuthService.swift */,
-				A2000001000013 /* MockAIService.swift */,
-				A2000001000014 /* MockChallengeService.swift */,
-				A2000001000015 /* MockSubscriptionService.swift */,
+				A1B2C3D4E5F6010B /* DemoData.swift */,
+				A1B2C3D4E5F6010C /* MockAuthService.swift */,
+				A1B2C3D4E5F6010D /* MockAIService.swift */,
+				A1B2C3D4E5F6010E /* MockChallengeService.swift */,
+				A1B2C3D4E5F6010F /* MockSubscriptionService.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		A4000001000005 /* Features */ = {
+		A1B2C3D4E5F60417 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				A4000001000005A /* Onboarding */,
-				A4000001000005B /* Auth */,
-				A4000001000005C /* Home */,
-				A4000001000005D /* Challenges */,
-				A4000001000005E /* Simulator */,
-				A4000001000005F /* Coach */,
-				A4000001000005G /* Achievements */,
-				A4000001000005H /* Social */,
-				A4000001000005I /* Profile */,
-				A4000001000005J /* Paywall */,
-				A4000001000005K /* Settings */,
+				A1B2C3D4E5F60418 /* Onboarding */,
+				A1B2C3D4E5F60419 /* Auth */,
+				A1B2C3D4E5F6041A /* Home */,
+				A1B2C3D4E5F6041B /* Challenges */,
+				A1B2C3D4E5F6041C /* Simulator */,
+				A1B2C3D4E5F6041D /* Coach */,
+				A1B2C3D4E5F6041E /* Achievements */,
+				A1B2C3D4E5F6041F /* Social */,
+				A1B2C3D4E5F60420 /* Profile */,
+				A1B2C3D4E5F60421 /* Paywall */,
+				A1B2C3D4E5F60422 /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		A4000001000005A /* Onboarding */ = {
+		A1B2C3D4E5F60418 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000016 /* OnboardingFlowView.swift */,
+				A1B2C3D4E5F60110 /* OnboardingFlowView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		A4000001000005B /* Auth */ = {
+		A1B2C3D4E5F60419 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000017 /* AuthView.swift */,
+				A1B2C3D4E5F60111 /* AuthView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		A4000001000005C /* Home */ = {
+		A1B2C3D4E5F6041A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000018 /* MainTabView.swift */,
-				A2000001000019 /* HomeView.swift */,
-				A2000001000020 /* HomeViewModel.swift */,
+				A1B2C3D4E5F60112 /* MainTabView.swift */,
+				A1B2C3D4E5F60113 /* HomeView.swift */,
+				A1B2C3D4E5F60114 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A4000001000005D /* Challenges */ = {
+		A1B2C3D4E5F6041B /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000021 /* ChallengesView.swift */,
-				A2000001000022 /* ChallengeDetailView.swift */,
-				A2000001000023 /* ChallengeViewModel.swift */,
+				A1B2C3D4E5F60115 /* ChallengesView.swift */,
+				A1B2C3D4E5F60116 /* ChallengeDetailView.swift */,
+				A1B2C3D4E5F60117 /* ChallengeViewModel.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
 		};
-		A4000001000005E /* Simulator */ = {
+		A1B2C3D4E5F6041C /* Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000024 /* SimulatorView.swift */,
-				A2000001000025 /* SimulatorViewModel.swift */,
+				A1B2C3D4E5F60118 /* SimulatorView.swift */,
+				A1B2C3D4E5F60119 /* SimulatorViewModel.swift */,
 			);
 			path = Simulator;
 			sourceTree = "<group>";
 		};
-		A4000001000005F /* Coach */ = {
+		A1B2C3D4E5F6041D /* Coach */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000026 /* CoachView.swift */,
-				A2000001000027 /* CoachViewModel.swift */,
+				A1B2C3D4E5F6011A /* CoachView.swift */,
+				A1B2C3D4E5F6011B /* CoachViewModel.swift */,
 			);
 			path = Coach;
 			sourceTree = "<group>";
 		};
-		A4000001000005G /* Achievements */ = {
+		A1B2C3D4E5F6041E /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000028 /* AchievementsView.swift */,
+				A1B2C3D4E5F6011C /* AchievementsView.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
 		};
-		A4000001000005H /* Social */ = {
+		A1B2C3D4E5F6041F /* Social */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000029 /* LeaderboardView.swift */,
+				A1B2C3D4E5F6011D /* LeaderboardView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
 		};
-		A4000001000005I /* Profile */ = {
+		A1B2C3D4E5F60420 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000030 /* ProfileView.swift */,
+				A1B2C3D4E5F6011E /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		A4000001000005J /* Paywall */ = {
+		A1B2C3D4E5F60421 /* Paywall */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000031 /* PaywallView.swift */,
+				A1B2C3D4E5F6011F /* PaywallView.swift */,
 			);
 			path = Paywall;
 			sourceTree = "<group>";
 		};
-		A4000001000005K /* Settings */ = {
+		A1B2C3D4E5F60422 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000032 /* SettingsView.swift */,
+				A1B2C3D4E5F60120 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		A4000001000006 /* Components */ = {
+		A1B2C3D4E5F60430 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000033 /* XPProgressBar.swift */,
-				A2000001000034 /* StatCard.swift */,
-				A2000001000035 /* LevelBadge.swift */,
-				A2000001000036 /* GradientButton.swift */,
+				A1B2C3D4E5F60121 /* XPProgressBar.swift */,
+				A1B2C3D4E5F60122 /* StatCard.swift */,
+				A1B2C3D4E5F60123 /* LevelBadge.swift */,
+				A1B2C3D4E5F60124 /* GradientButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		A4000001000007 /* Utilities */ = {
+		A1B2C3D4E5F60431 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A2000001000037 /* HapticManager.swift */,
-				A2000001000038 /* Extensions.swift */,
+				A1B2C3D4E5F60125 /* HapticManager.swift */,
+				A1B2C3D4E5F60126 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		/* Test group */
-		A4000002000000 /* STACKEDTests */ = {
+		A1B2C3D4E5F60470 /* STACKEDTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2000002000001 /* STACKEDTests.swift */,
+				A1B2C3D4E5F60150 /* STACKEDTests.swift */,
 			);
 			path = STACKEDTests;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60471 /* STACKEDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60151 /* STACKEDUITests.swift */,
+			);
+			path = STACKEDUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5000001000000 /* STACKED */ = {
+		A1B2C3D4E5F60210 /* STACKED */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6000001000000 /* Build configuration list for PBXNativeTarget "STACKED" */;
+			buildConfigurationList = A1B2C3D4E5F60500 /* Build configuration list for PBXNativeTarget "STACKED" */;
 			buildPhases = (
-				A7000001000001 /* Sources */,
-				A3000001000001 /* Frameworks */,
-				A7000001000002 /* Resources */,
+				A1B2C3D4E5F60310 /* Sources */,
+				A1B2C3D4E5F60300 /* Frameworks */,
+				A1B2C3D4E5F60320 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -370,47 +401,69 @@
 			);
 			name = STACKED;
 			productName = STACKED;
-			productReference = A2000001000099 /* STACKED.app */;
+			productReference = A1B2C3D4E5F60141 /* STACKED.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A5000002000000 /* STACKEDTests */ = {
+		A1B2C3D4E5F60211 /* STACKEDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6000002000000 /* Build configuration list for PBXNativeTarget "STACKEDTests" */;
+			buildConfigurationList = A1B2C3D4E5F60501 /* Build configuration list for PBXNativeTarget "STACKEDTests" */;
 			buildPhases = (
-				A7000002000001 /* Sources */,
-				A3000002000001 /* Frameworks */,
-				A7000002000002 /* Resources */,
+				A1B2C3D4E5F60311 /* Sources */,
+				A1B2C3D4E5F60301 /* Frameworks */,
+				A1B2C3D4E5F60321 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A8000001000001 /* PBXTargetDependency */,
+				A1B2C3D4E5F60062 /* PBXTargetDependency */,
 			);
 			name = STACKEDTests;
 			productName = STACKEDTests;
-			productReference = A2000002000099 /* STACKEDTests.xctest */;
+			productReference = A1B2C3D4E5F60142 /* STACKEDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1B2C3D4E5F60212 /* STACKEDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D4E5F60502 /* Build configuration list for PBXNativeTarget "STACKEDUITests" */;
+			buildPhases = (
+				A1B2C3D4E5F60312 /* Sources */,
+				A1B2C3D4E5F60302 /* Frameworks */,
+				A1B2C3D4E5F60322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B2C3D4E5F60063 /* PBXTargetDependency */,
+			);
+			name = STACKEDUITests;
+			productName = STACKEDUITests;
+			productReference = A1B2C3D4E5F60143 /* STACKEDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A9000000000000 /* Project object */ = {
+		A1B2C3D4E5F60200 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					A5000001000000 = {
+					A1B2C3D4E5F60210 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					A5000002000000 = {
+					A1B2C3D4E5F60211 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A5000001000000;
+						TestTargetID = A1B2C3D4E5F60210;
+					};
+					A1B2C3D4E5F60212 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A1B2C3D4E5F60210;
 					};
 				};
 			};
-			buildConfigurationList = A6000000000000 /* Build configuration list for PBXProject "STACKED" */;
+			buildConfigurationList = A1B2C3D4E5F60503 /* Build configuration list for PBXProject "STACKED" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -418,26 +471,34 @@
 				en,
 				Base,
 			);
-			mainGroup = A4000000000000;
-			productRefGroup = A4000004000000 /* Products */;
+			mainGroup = A1B2C3D4E5F60400;
+			productRefGroup = A1B2C3D4E5F60490 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5000001000000 /* STACKED */,
-				A5000002000000 /* STACKEDTests */,
+				A1B2C3D4E5F60210 /* STACKED */,
+				A1B2C3D4E5F60211 /* STACKEDTests */,
+				A1B2C3D4E5F60212 /* STACKEDUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7000001000002 /* Resources */ = {
+		A1B2C3D4E5F60320 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7000002000002 /* Resources */ = {
+		A1B2C3D4E5F60321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F60322 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,82 +508,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7000001000001 /* Sources */ = {
+		A1B2C3D4E5F60310 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000001000001 /* STACKEDApp.swift in Sources */,
-				A1000001000002 /* RootView.swift in Sources */,
-				A1000001000003 /* AppConfig.swift in Sources */,
-				A1000001000004 /* Theme.swift in Sources */,
-				A1000001000005 /* UserProfile.swift in Sources */,
-				A1000001000006 /* Challenge.swift in Sources */,
-				A1000001000007 /* Achievement.swift in Sources */,
-				A1000001000008 /* SimulationResult.swift in Sources */,
-				A1000001000009 /* ChatMessage.swift in Sources */,
-				A1000001000010 /* LeaderboardEntry.swift in Sources */,
-				A1000001000011 /* DemoData.swift in Sources */,
-				A1000001000012 /* MockAuthService.swift in Sources */,
-				A1000001000013 /* MockAIService.swift in Sources */,
-				A1000001000014 /* MockChallengeService.swift in Sources */,
-				A1000001000015 /* MockSubscriptionService.swift in Sources */,
-				A1000001000016 /* OnboardingFlowView.swift in Sources */,
-				A1000001000017 /* AuthView.swift in Sources */,
-				A1000001000018 /* MainTabView.swift in Sources */,
-				A1000001000019 /* HomeView.swift in Sources */,
-				A1000001000020 /* HomeViewModel.swift in Sources */,
-				A1000001000021 /* ChallengesView.swift in Sources */,
-				A1000001000022 /* ChallengeDetailView.swift in Sources */,
-				A1000001000023 /* ChallengeViewModel.swift in Sources */,
-				A1000001000024 /* SimulatorView.swift in Sources */,
-				A1000001000025 /* SimulatorViewModel.swift in Sources */,
-				A1000001000026 /* CoachView.swift in Sources */,
-				A1000001000027 /* CoachViewModel.swift in Sources */,
-				A1000001000028 /* AchievementsView.swift in Sources */,
-				A1000001000029 /* LeaderboardView.swift in Sources */,
-				A1000001000030 /* ProfileView.swift in Sources */,
-				A1000001000031 /* PaywallView.swift in Sources */,
-				A1000001000032 /* SettingsView.swift in Sources */,
-				A1000001000033 /* XPProgressBar.swift in Sources */,
-				A1000001000034 /* StatCard.swift in Sources */,
-				A1000001000035 /* LevelBadge.swift in Sources */,
-				A1000001000036 /* GradientButton.swift in Sources */,
-				A1000001000037 /* HapticManager.swift in Sources */,
-				A1000001000038 /* Extensions.swift in Sources */,
+				A1B2C3D4E5F60001 /* STACKEDApp.swift in Sources */,
+				A1B2C3D4E5F60002 /* RootView.swift in Sources */,
+				A1B2C3D4E5F60003 /* AppConfig.swift in Sources */,
+				A1B2C3D4E5F60004 /* Theme.swift in Sources */,
+				A1B2C3D4E5F60005 /* UserProfile.swift in Sources */,
+				A1B2C3D4E5F60006 /* Challenge.swift in Sources */,
+				A1B2C3D4E5F60007 /* Achievement.swift in Sources */,
+				A1B2C3D4E5F60008 /* SimulationResult.swift in Sources */,
+				A1B2C3D4E5F60009 /* ChatMessage.swift in Sources */,
+				A1B2C3D4E5F6000A /* LeaderboardEntry.swift in Sources */,
+				A1B2C3D4E5F6000B /* DemoData.swift in Sources */,
+				A1B2C3D4E5F6000C /* MockAuthService.swift in Sources */,
+				A1B2C3D4E5F6000D /* MockAIService.swift in Sources */,
+				A1B2C3D4E5F6000E /* MockChallengeService.swift in Sources */,
+				A1B2C3D4E5F6000F /* MockSubscriptionService.swift in Sources */,
+				A1B2C3D4E5F60010 /* OnboardingFlowView.swift in Sources */,
+				A1B2C3D4E5F60011 /* AuthView.swift in Sources */,
+				A1B2C3D4E5F60012 /* MainTabView.swift in Sources */,
+				A1B2C3D4E5F60013 /* HomeView.swift in Sources */,
+				A1B2C3D4E5F60014 /* HomeViewModel.swift in Sources */,
+				A1B2C3D4E5F60015 /* ChallengesView.swift in Sources */,
+				A1B2C3D4E5F60016 /* ChallengeDetailView.swift in Sources */,
+				A1B2C3D4E5F60017 /* ChallengeViewModel.swift in Sources */,
+				A1B2C3D4E5F60018 /* SimulatorView.swift in Sources */,
+				A1B2C3D4E5F60019 /* SimulatorViewModel.swift in Sources */,
+				A1B2C3D4E5F6001A /* CoachView.swift in Sources */,
+				A1B2C3D4E5F6001B /* CoachViewModel.swift in Sources */,
+				A1B2C3D4E5F6001C /* AchievementsView.swift in Sources */,
+				A1B2C3D4E5F6001D /* LeaderboardView.swift in Sources */,
+				A1B2C3D4E5F6001E /* ProfileView.swift in Sources */,
+				A1B2C3D4E5F6001F /* PaywallView.swift in Sources */,
+				A1B2C3D4E5F60020 /* SettingsView.swift in Sources */,
+				A1B2C3D4E5F60021 /* XPProgressBar.swift in Sources */,
+				A1B2C3D4E5F60022 /* StatCard.swift in Sources */,
+				A1B2C3D4E5F60023 /* LevelBadge.swift in Sources */,
+				A1B2C3D4E5F60024 /* GradientButton.swift in Sources */,
+				A1B2C3D4E5F60025 /* HapticManager.swift in Sources */,
+				A1B2C3D4E5F60026 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7000002000001 /* Sources */ = {
+		A1B2C3D4E5F60311 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1000002000001 /* STACKEDTests.swift in Sources */,
+				A1B2C3D4E5F60050 /* STACKEDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3D4E5F60312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60051 /* STACKEDUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A8000001000001 /* PBXTargetDependency */ = {
+		A1B2C3D4E5F60062 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A5000001000000 /* STACKED */;
-			targetProxy = A8000001000002 /* PBXContainerItemProxy */;
+			target = A1B2C3D4E5F60210 /* STACKED */;
+			targetProxy = A1B2C3D4E5F60060 /* PBXContainerItemProxy */;
+		};
+		A1B2C3D4E5F60063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B2C3D4E5F60210 /* STACKED */;
+			targetProxy = A1B2C3D4E5F60061 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXContainerItemProxy section */
-		A8000001000002 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9000000000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5000001000000;
-			remoteInfo = STACKED;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin XCBuildConfiguration section */
-		/* Project-level Debug */
-		AB000000000001 /* Debug */ = {
+		A1B2C3D4E5F60600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -559,6 +622,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -580,12 +644,10 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
 		};
-		/* Project-level Release */
-		AB000000000002 /* Release */ = {
+		A1B2C3D4E5F60601 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -622,6 +684,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -631,18 +694,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.9;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		/* Main target Debug */
-		AB000001000001 /* Debug */ = {
+		A1B2C3D4E5F60602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -663,12 +723,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		/* Main target Release */
-		AB000001000002 /* Release */ = {
+		A1B2C3D4E5F60603 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -689,12 +748,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		/* Test target Debug */
-		AB000002000001 /* Debug */ = {
+		A1B2C3D4E5F60604 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,13 +765,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STACKED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STACKED";
 			};
 			name = Debug;
 		};
-		/* Test target Release */
-		AB000002000002 /* Release */ = {
+		A1B2C3D4E5F60605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -726,37 +783,80 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STACKED.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/STACKED";
+			};
+			name = Release;
+		};
+		A1B2C3D4E5F60606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = STACKED;
+			};
+			name = Debug;
+		};
+		A1B2C3D4E5F60607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.getstacked.app.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = STACKED;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6000000000000 /* Build configuration list for PBXProject "STACKED" */ = {
+		A1B2C3D4E5F60503 /* Build configuration list for PBXProject "STACKED" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB000000000001 /* Debug */,
-				AB000000000002 /* Release */,
+				A1B2C3D4E5F60600 /* Debug */,
+				A1B2C3D4E5F60601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6000001000000 /* Build configuration list for PBXNativeTarget "STACKED" */ = {
+		A1B2C3D4E5F60500 /* Build configuration list for PBXNativeTarget "STACKED" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB000001000001 /* Debug */,
-				AB000001000002 /* Release */,
+				A1B2C3D4E5F60602 /* Debug */,
+				A1B2C3D4E5F60603 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6000002000000 /* Build configuration list for PBXNativeTarget "STACKEDTests" */ = {
+		A1B2C3D4E5F60501 /* Build configuration list for PBXNativeTarget "STACKEDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB000002000001 /* Debug */,
-				AB000002000002 /* Release */,
+				A1B2C3D4E5F60604 /* Debug */,
+				A1B2C3D4E5F60605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D4E5F60502 /* Build configuration list for PBXNativeTarget "STACKEDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D4E5F60606 /* Debug */,
+				A1B2C3D4E5F60607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -764,5 +864,5 @@
 /* End XCConfigurationList section */
 
 	};
-	rootObject = A9000000000000 /* Project object */;
+	rootObject = A1B2C3D4E5F60200 /* Project object */;
 }
