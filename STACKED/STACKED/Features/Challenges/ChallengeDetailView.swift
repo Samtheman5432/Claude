@@ -1,23 +1,22 @@
 import SwiftUI
 
+// ChallengeDetailView is always self-contained with its own StateObject.
+// ChallengesView reloads completed IDs after this sheet is dismissed.
 struct ChallengeDetailView: View {
     let challenge: Challenge
-    var viewModel: ChallengeViewModel? = nil
+    var onCompleted: ((ChallengeAttempt) -> Void)? = nil
 
-    @StateObject private var localVM: ChallengeViewModel
+    @StateObject private var vm: ChallengeViewModel
     @Environment(\.dismiss) private var dismiss
 
-    init(challenge: Challenge, viewModel: ChallengeViewModel? = nil) {
+    init(challenge: Challenge, onCompleted: ((ChallengeAttempt) -> Void)? = nil) {
         self.challenge = challenge
-        self.viewModel = viewModel
-        // Create local viewmodel if none provided (for standalone navigation)
-        self._localVM = StateObject(wrappedValue: viewModel ?? ChallengeViewModel(
+        self.onCompleted = onCompleted
+        self._vm = StateObject(wrappedValue: ChallengeViewModel(
             challengeService: MockChallengeService(),
             authService: MockAuthService()
         ))
     }
-
-    private var vm: ChallengeViewModel { viewModel ?? localVM }
 
     var body: some View {
         NavigationStack {
@@ -27,9 +26,7 @@ struct ChallengeDetailView: View {
                 VStack(spacing: 0) {
                     // Top bar
                     HStack {
-                        Button {
-                            dismiss()
-                        } label: {
+                        Button { dismiss() } label: {
                             Image(systemName: "xmark")
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundStyle(Theme.Colors.textSecondary)
@@ -48,7 +45,6 @@ struct ChallengeDetailView: View {
 
                         Spacer()
 
-                        // XP reward
                         Text("+\(challenge.xpReward) XP")
                             .font(Theme.Typography.callout)
                             .foregroundStyle(Theme.Colors.neonGreen)
@@ -74,27 +70,21 @@ struct ChallengeDetailView: View {
                         } else {
                             ChallengeQuestionView(
                                 challenge: challenge,
-                                selectedOption: $localVM.selectedOption,
+                                selectedOption: $vm.selectedOption,
                                 hasSubmitted: vm.hasSubmitted,
                                 isLoading: vm.isLoading
                             )
-                            .onChange(of: vm.selectedOption) { newVal in
-                                if viewModel != nil {
-                                    // sync with parent vm
-                                }
-                            }
                         }
                     }
 
                     if !vm.showResult {
-                        // Submit button
                         VStack(spacing: Theme.Spacing.sm) {
                             GradientButton(
                                 title: vm.hasSubmitted ? "Checking..." : "Submit Answer",
                                 isLoading: vm.isLoading,
                                 isDisabled: vm.selectedOption == nil
                             ) {
-                                Task { await submitWithLocalVM() }
+                                Task { await vm.submitAnswer() }
                             }
                         }
                         .padding(.horizontal, Theme.Spacing.lg)
@@ -103,20 +93,12 @@ struct ChallengeDetailView: View {
                 }
             }
             .navigationBarHidden(true)
-            .onAppear {
-                if viewModel == nil {
-                    localVM.startChallenge(challenge)
+            .onAppear { vm.startChallenge(challenge) }
+            .onChange(of: vm.lastAttempt) { attempt in
+                if let attempt = attempt {
+                    onCompleted?(attempt)
                 }
             }
-        }
-    }
-
-    private func submitWithLocalVM() async {
-        if let vm = viewModel {
-            await vm.submitAnswer()
-        } else {
-            localVM.selectedOption = localVM.selectedOption
-            await localVM.submitAnswer()
         }
     }
 }
@@ -131,9 +113,8 @@ struct ChallengeQuestionView: View {
 
     var body: some View {
         VStack(spacing: Theme.Spacing.xl) {
-            // Question
+            // Question card
             VStack(alignment: .leading, spacing: Theme.Spacing.md) {
-                // Difficulty
                 HStack {
                     DifficultyBadge(difficulty: challenge.difficulty)
                     Text("~\(challenge.estimatedSeconds) seconds")
@@ -186,9 +167,7 @@ struct ChallengeQuestionView: View {
         .padding(.horizontal, Theme.Spacing.lg)
         .padding(.top, Theme.Spacing.md)
         .onAppear {
-            withAnimation {
-                appear = true
-            }
+            withAnimation { appear = true }
         }
     }
 }
@@ -206,7 +185,6 @@ struct OptionButton: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: Theme.Spacing.sm) {
-                // Letter
                 ZStack {
                     Circle()
                         .fill(isSelected ? Theme.Colors.neonGreen : Theme.Colors.surfaceElevated)
@@ -261,11 +239,9 @@ struct ChallengeResultView: View {
     let onDismiss: () -> Void
 
     @State private var appear = false
-    @State private var confettiTrigger = 0
 
     var body: some View {
         VStack(spacing: Theme.Spacing.xl) {
-            // Result Header
             VStack(spacing: Theme.Spacing.md) {
                 ZStack {
                     Circle()
@@ -281,7 +257,6 @@ struct ChallengeResultView: View {
                     Text(isCorrect ? "Correct! 🔥" : "Not quite...")
                         .font(Theme.Typography.title1)
                         .foregroundStyle(isCorrect ? Theme.Colors.neonGreen : Theme.Colors.errorRed)
-
                     Text(isCorrect ? "You nailed it!" : "But you're learning — that's what matters.")
                         .font(Theme.Typography.callout)
                         .foregroundStyle(Theme.Colors.textSecondary)
@@ -289,7 +264,6 @@ struct ChallengeResultView: View {
                 }
                 .opacity(appear ? 1 : 0)
 
-                // XP gained
                 HStack(spacing: Theme.Spacing.sm) {
                     Text("⚡")
                     Text("+\(xpEarned) XP earned")
@@ -307,7 +281,7 @@ struct ChallengeResultView: View {
                 .neonGlow(radius: 4)
             }
 
-            // Correct answer breakdown
+            // Correct answer + explanation
             VStack(alignment: .leading, spacing: Theme.Spacing.md) {
                 if !isCorrect {
                     VStack(alignment: .leading, spacing: Theme.Spacing.xs) {
@@ -329,12 +303,10 @@ struct ChallengeResultView: View {
                     )
                 }
 
-                // Explanation
                 VStack(alignment: .leading, spacing: Theme.Spacing.sm) {
                     Text("💡 The Money Lesson")
                         .font(Theme.Typography.headline)
                         .foregroundStyle(Theme.Colors.textPrimary)
-
                     Text(challenge.explanation)
                         .font(Theme.Typography.body)
                         .foregroundStyle(Theme.Colors.textSecondary)
@@ -346,23 +318,14 @@ struct ChallengeResultView: View {
             .opacity(appear ? 1 : 0)
             .offset(y: appear ? 0 : 20)
 
-            // Action buttons
-            VStack(spacing: Theme.Spacing.sm) {
-                GradientButton(title: "Continue") {
-                    onDismiss()
-                }
-            }
-            .padding(.bottom, Theme.Spacing.xl)
-            .opacity(appear ? 1 : 0)
+            GradientButton(title: "Continue") { onDismiss() }
+                .padding(.bottom, Theme.Spacing.xl)
+                .opacity(appear ? 1 : 0)
         }
         .padding(.horizontal, Theme.Spacing.lg)
         .onAppear {
-            withAnimation(.spring(response: 0.7, dampingFraction: 0.7)) {
-                appear = true
-            }
-            if isCorrect {
-                HapticManager.shared.success()
-            }
+            withAnimation(.spring(response: 0.7, dampingFraction: 0.7)) { appear = true }
+            if isCorrect { HapticManager.shared.success() }
         }
     }
 }

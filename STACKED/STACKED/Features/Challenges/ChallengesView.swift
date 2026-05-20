@@ -74,7 +74,6 @@ struct ChallengesView: View {
                                         isCompleted: viewModel.isCompleted(challenge)
                                     ) {
                                         selectedChallenge = challenge
-                                        viewModel.startChallenge(challenge)
                                         showChallengeSheet = true
                                     }
                                 }
@@ -88,11 +87,15 @@ struct ChallengesView: View {
             }
             .navigationBarHidden(true)
             .task { await viewModel.loadChallenges() }
-            .sheet(isPresented: $showChallengeSheet) {
+            .sheet(isPresented: $showChallengeSheet, onDismiss: {
+                Task { await viewModel.loadChallenges() }
+            }) {
                 if let challenge = selectedChallenge {
                     ChallengeDetailView(
                         challenge: challenge,
-                        viewModel: viewModel
+                        onCompleted: { attempt in
+                            viewModel.completedIds.insert(attempt.challengeId)
+                        }
                     )
                 }
             }

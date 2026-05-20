@@ -45,6 +45,7 @@
 		A1B2C3D4E5F60024 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60124 /* GradientButton.swift */; };
 		A1B2C3D4E5F60025 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60125 /* HapticManager.swift */; };
 		A1B2C3D4E5F60026 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60126 /* Extensions.swift */; };
+		A1B2C3D4E5F60027 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60127 /* AnalyticsManager.swift */; };
 		A1B2C3D4E5F60030 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60130 /* Charts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A1B2C3D4E5F60050 /* STACKEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60150 /* STACKEDTests.swift */; };
 		A1B2C3D4E5F60051 /* STACKEDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60151 /* STACKEDUITests.swift */; };
@@ -106,6 +107,7 @@
 		A1B2C3D4E5F60124 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60125 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60126 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60127 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60130 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		A1B2C3D4E5F60140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B2C3D4E5F60141 /* STACKED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STACKED.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,8 +200,17 @@
 			isa = PBXGroup;
 			children = (
 				A1B2C3D4E5F60412 /* Config */,
+				A1B2C3D4E5F60414 /* Analytics */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		A1B2C3D4E5F60414 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D4E5F60127 /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		A1B2C3D4E5F60412 /* Config */ = {
@@ -550,6 +561,7 @@
 				A1B2C3D4E5F60024 /* GradientButton.swift in Sources */,
 				A1B2C3D4E5F60025 /* HapticManager.swift in Sources */,
 				A1B2C3D4E5F60026 /* Extensions.swift in Sources */,
+				A1B2C3D4E5F60027 /* AnalyticsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
